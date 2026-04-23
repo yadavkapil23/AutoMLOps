@@ -1,0 +1,50 @@
+# ============================================
+# .gitignore — MLOps Ride Demand Prediction
+# ============================================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Data (managed by DVC)
+data/raw/*.csv
+data/processed/*.csv
+data/logs/*.csv
+
+# Models
+models/champion/*.joblib
+models/challenger/*.joblib
+models/champion_backup/
+models/*.joblib
+
+# MLflow
+mlruns/
+
+# Monitoring reports
+monitoring/reports/*.json
+
+# Pipeline results
+pipeline/results/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
